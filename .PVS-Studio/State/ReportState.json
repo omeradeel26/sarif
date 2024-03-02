@@ -1,0 +1,197 @@
+{
+  "json": [
+    {
+      "code": "Renew",
+      "message": "Your license will expire in 7 days. Click 'Renew' to learn more or contact us at support@viva64.com.",
+      "falseAlarm": false,
+      "level": 1,
+      "positions": [],
+      "cwe": 0,
+      "favorite": false,
+      "projects": [],
+      "id": 0
+    },
+    {
+      "code": "V6007",
+      "message": "Expression 'ch <= 0x0FF19' is always false.",
+      "falseAlarm": false,
+      "level": 1,
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 5,
+          "endLine": 5,
+          "file": "C:\\Users\\omera\\OneDrive\\Documents\\School\\URA\\sarif\\Main.java",
+          "navigation": {
+            "currentLine": -1611960338,
+            "previousLine": 3013497,
+            "nextLine": 1072458840,
+            "columns": 0
+          }
+        }
+      ],
+      "cwe": 570,
+      "sastId": "CERT-MSC57-J",
+      "favorite": false,
+      "projects": [],
+      "id": 1
+    },
+    {
+      "code": "V6007",
+      "message": "Expression 'ch <= 0x0FF3A' is always false.",
+      "falseAlarm": false,
+      "level": 1,
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 6,
+          "endLine": 6,
+          "file": "C:\\Users\\omera\\OneDrive\\Documents\\School\\URA\\sarif\\Main.java",
+          "navigation": {
+            "currentLine": 1072458840,
+            "previousLine": -1611960338,
+            "nextLine": 2143345141,
+            "columns": 0
+          }
+        }
+      ],
+      "cwe": 570,
+      "sastId": "CERT-MSC57-J",
+      "favorite": false,
+      "projects": [],
+      "id": 2
+    },
+    {
+      "code": "V6007",
+      "message": "Expression 'ch <= 0x0FF5A' is always false.",
+      "falseAlarm": false,
+      "level": 1,
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 7,
+          "endLine": 7,
+          "file": "C:\\Users\\omera\\OneDrive\\Documents\\School\\URA\\sarif\\Main.java",
+          "navigation": {
+            "currentLine": 2143345141,
+            "previousLine": 1072458840,
+            "nextLine": 5219,
+            "columns": 0
+          }
+        }
+      ],
+      "cwe": 570,
+      "sastId": "CERT-MSC57-J",
+      "favorite": false,
+      "projects": [],
+      "id": 3
+    },
+    {
+      "code": "V6007",
+      "message": "Expression '!((ch >= 0x0FF10 && ch <= 0x0FF19) || (ch >= 0x0FF21 && ch <= 0x0FF3A) || (ch >= 0x0FF41 && ch <= 0x0FF5A))' is always true.",
+      "falseAlarm": false,
+      "level": 1,
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 5,
+          "endLine": 5,
+          "file": "C:\\Users\\omera\\OneDrive\\Documents\\School\\URA\\sarif\\Main.java",
+          "navigation": {
+            "currentLine": -1611960338,
+            "previousLine": 3013497,
+            "nextLine": 1072458840,
+            "columns": 0
+          }
+        }
+      ],
+      "cwe": 571,
+      "sastId": "CERT-MSC57-J",
+      "favorite": false,
+      "projects": [],
+      "id": 4
+    },
+    {
+      "code": "V6007",
+      "message": "Expression 'ch >= 0x0FF10' is always true.",
+      "falseAlarm": false,
+      "level": 1,
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 5,
+          "endLine": 5,
+          "file": "C:\\Users\\omera\\OneDrive\\Documents\\School\\URA\\sarif\\Main.java",
+          "navigation": {
+            "currentLine": -1611960338,
+            "previousLine": 3013497,
+            "nextLine": 1072458840,
+            "columns": 0
+          }
+        }
+      ],
+      "cwe": 571,
+      "sastId": "CERT-MSC57-J",
+      "favorite": false,
+      "projects": [],
+      "id": 5
+    },
+    {
+      "code": "V6007",
+      "message": "Expression 'ch >= 0x0FF21' is always true.",
+      "falseAlarm": false,
+      "level": 1,
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 6,
+          "endLine": 6,
+          "file": "C:\\Users\\omera\\OneDrive\\Documents\\School\\URA\\sarif\\Main.java",
+          "navigation": {
+            "currentLine": 1072458840,
+            "previousLine": -1611960338,
+            "nextLine": 2143345141,
+            "columns": 0
+          }
+        }
+      ],
+      "cwe": 571,
+      "sastId": "CERT-MSC57-J",
+      "favorite": false,
+      "projects": [],
+      "id": 6
+    },
+    {
+      "code": "V6007",
+      "message": "Expression 'ch >= 0x0FF41' is always true.",
+      "falseAlarm": false,
+      "level": 1,
+      "positions": [
+        {
+          "column": 1,
+          "endColumn": 1,
+          "line": 7,
+          "endLine": 7,
+          "file": "C:\\Users\\omera\\OneDrive\\Documents\\School\\URA\\sarif\\Main.java",
+          "navigation": {
+            "currentLine": 2143345141,
+            "previousLine": 1072458840,
+            "nextLine": 5219,
+            "columns": 0
+          }
+        }
+      ],
+      "cwe": 571,
+      "sastId": "CERT-MSC57-J",
+      "favorite": false,
+      "projects": [],
+      "id": 7
+    }
+  ]
+}

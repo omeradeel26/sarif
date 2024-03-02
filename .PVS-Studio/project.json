@@ -1,0 +1,16 @@
+{
+  "modules": [
+    {
+      "name": "sarif",
+      "path": "c:\\Users\\omera\\OneDrive\\Documents\\School\\URA\\sarif\\",
+      "sources": [
+        "c:\\Users\\omera\\OneDrive\\Documents\\School\\URA\\sarif\\Main.java"
+      ],
+      "testSources": [],
+      "generatedSources": [],
+      "classpath": [
+        "C:\\Users\\omera\\AppData\\Roaming\\Code\\User\\workspaceStorage\\140d09d13644f7b0496fb973a13272a5\\redhat.java\\jdt_ws\\sarif_4c29e765\\bin"
+      ]
+    }
+  ]
+}
