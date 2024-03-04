@@ -36,28 +36,6 @@
       },
       "results": [
         {
-          "ruleId": "Renew",
-          "message": {
-            "text": "Your license will expire in 7 days. Click 'Renew' to learn more or contact us at support@viva64.com."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": ""
-                },
-                "region": {
-                  "startLine": 0,
-                  "endLine": 0,
-                  "startColumn": 1,
-                  "endColumn": 2147483647
-                }
-              }
-            }
-          ]
-        },
-        {
           "ruleId": "V6007",
           "message": {
             "text": "Expression '!((ch >= 0x0FF10 && ch <= 0x0FF19) || (ch >= 0x0FF21 && ch <= 0x0FF3A) || (ch >= 0x0FF41 && ch <= 0x0FF5A))' is always true."
