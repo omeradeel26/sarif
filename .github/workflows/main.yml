@@ -20,4 +20,4 @@ jobs:
         java-version: '11'  # Adjust Java version as needed
 
     - name: Run JAR
-      run: java -jar javac-diagnostics-wrapper.jar io.github.wmdietl.diagnostics.json.sarif.Main
+      run: Java -jar javac-diagnostics-wrapper.jar io.github.wmdietl.diagnostics.json.sarif.Main
