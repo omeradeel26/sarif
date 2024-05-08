@@ -14,6 +14,9 @@
     "results" : [ {
       "ruleId" : "compiler.err.cant.resolve.location",
       "level" : "error",
+      "message" : {
+        "text" : "cannot find symbol\n  symbol:   class Date\n  location: class Hello"
+      },
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
@@ -30,6 +33,9 @@
     }, {
       "ruleId" : "compiler.err.cant.resolve.location",
       "level" : "error",
+      "message" : {
+        "text" : "cannot find symbol\n  symbol:   class Date\n  location: class Hello"
+      },
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
@@ -46,6 +52,9 @@
     }, {
       "ruleId" : "compiler.err.cant.resolve.location",
       "level" : "error",
+      "message" : {
+        "text" : "cannot find symbol\n  symbol:   variable obj\n  location: class Hello"
+      },
       "locations" : [ {
         "physicalLocation" : {
           "artifactLocation" : {
