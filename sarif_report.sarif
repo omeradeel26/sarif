@@ -1,195 +1,64 @@
 {
-  "version": "2.1.0",
-  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
-  "runs": [
-    {
-      "tool": {
-        "driver": {
-          "name": "PVS-Studio",
-          "semanticVersion": "7.29.79138.771",
-          "informationUri": "https://pvs-studio.com",
-          "rules": [
-            {
-              "id": "Renew",
-              "name": "RuleRenew",
-              "help": {
-                "text": "https://pvs-studio.com/en/renewal/"
-              },
-              "helpUri": "https://pvs-studio.com/en/renewal/"
-            },
-            {
-              "id": "V6007",
-              "name": "RuleV6007",
-              "help": {
-                "text": "https://pvs-studio.com/en/docs/warnings/v6007/"
-              },
-              "helpUri": "https://pvs-studio.com/en/docs/warnings/v6007/",
-              "properties": {
-                "tags": [
-                  "security",
-                  "external/cwe/cwe-571"
-                ]
-              }
-            }
-          ]
+  "$schema" : "http://json.schemastore.org/sarif-2.1.0-rtm.4",
+  "version" : "2.1.0",
+  "runs" : [ {
+    "tool" : {
+      "driver" : {
+        "name" : "java-diagnostics-wrapper",
+        "informationUri" : "https://github.com/eisopux/javac-diagnostics-wrapper",
+        "rules" : [ {
+          "id" : "compiler.err.cant.resolve.location"
+        } ]
+      }
+    },
+    "results" : [ {
+      "ruleId" : "compiler.err.cant.resolve.location",
+      "level" : "error",
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:///C:/Users/omera/OneDrive/Desktop/Hello.java"
+          },
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 8,
+            "endLine" : 8,
+            "endColumn" : 12
+          }
         }
-      },
-      "results": [
-        {
-          "ruleId": "V6007",
-          "message": {
-            "text": "Expression '!((ch >= 0x0FF10 && ch <= 0x0FF19) || (ch >= 0x0FF21 && ch <= 0x0FF3A) || (ch >= 0x0FF41 && ch <= 0x0FF5A))' is always true."
+      } ]
+    }, {
+      "ruleId" : "compiler.err.cant.resolve.location",
+      "level" : "error",
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:///C:/Users/omera/OneDrive/Desktop/Hello.java"
           },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C%3A/Users/omera/OneDrive/Documents/School/URA/sarif/Main.java"
-                },
-                "region": {
-                  "startLine": 5,
-                  "endLine": 5,
-                  "startColumn": 1,
-                  "endColumn": 2147483647
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "V6007",
-          "message": {
-            "text": "Expression 'ch <= 0x0FF19' is always false."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C%3A/Users/omera/OneDrive/Documents/School/URA/sarif/Main.java"
-                },
-                "region": {
-                  "startLine": 5,
-                  "endLine": 5,
-                  "startColumn": 1,
-                  "endColumn": 2147483647
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "V6007",
-          "message": {
-            "text": "Expression 'ch >= 0x0FF10' is always true."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C%3A/Users/omera/OneDrive/Documents/School/URA/sarif/Main.java"
-                },
-                "region": {
-                  "startLine": 5,
-                  "endLine": 5,
-                  "startColumn": 1,
-                  "endColumn": 2147483647
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "V6007",
-          "message": {
-            "text": "Expression 'ch <= 0x0FF3A' is always false."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C%3A/Users/omera/OneDrive/Documents/School/URA/sarif/Main.java"
-                },
-                "region": {
-                  "startLine": 6,
-                  "endLine": 6,
-                  "startColumn": 1,
-                  "endColumn": 2147483647
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "V6007",
-          "message": {
-            "text": "Expression 'ch >= 0x0FF21' is always true."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C%3A/Users/omera/OneDrive/Documents/School/URA/sarif/Main.java"
-                },
-                "region": {
-                  "startLine": 6,
-                  "endLine": 6,
-                  "startColumn": 1,
-                  "endColumn": 2147483647
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "V6007",
-          "message": {
-            "text": "Expression 'ch <= 0x0FF5A' is always false."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C%3A/Users/omera/OneDrive/Documents/School/URA/sarif/Main.java"
-                },
-                "region": {
-                  "startLine": 7,
-                  "endLine": 7,
-                  "startColumn": 1,
-                  "endColumn": 2147483647
-                }
-              }
-            }
-          ]
-        },
-        {
-          "ruleId": "V6007",
-          "message": {
-            "text": "Expression 'ch >= 0x0FF41' is always true."
-          },
-          "level": "error",
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "file:///C%3A/Users/omera/OneDrive/Documents/School/URA/sarif/Main.java"
-                },
-                "region": {
-                  "startLine": 7,
-                  "endLine": 7,
-                  "startColumn": 1,
-                  "endColumn": 2147483647
-                }
-              }
-            }
-          ]
+          "region" : {
+            "startLine" : 8,
+            "startColumn" : 24,
+            "endLine" : 8,
+            "endColumn" : 28
+          }
         }
-      ]
-    }
-  ]
+      } ]
+    }, {
+      "ruleId" : "compiler.err.cant.resolve.location",
+      "level" : "error",
+      "locations" : [ {
+        "physicalLocation" : {
+          "artifactLocation" : {
+            "uri" : "file:///C:/Users/omera/OneDrive/Desktop/Hello.java"
+          },
+          "region" : {
+            "startLine" : 9,
+            "startColumn" : 49,
+            "endLine" : 9,
+            "endColumn" : 52
+          }
+        }
+      } ]
+    } ]
+  } ]
 }
