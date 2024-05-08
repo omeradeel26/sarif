@@ -20,4 +20,4 @@ jobs:
         java-version: '11'  # Adjust Java version as needed
 
     - name: Run JAR
-      run: java -cp ./githu/workflows/javac-diagnostics-wrapper.jar io.github.wmdietl.diagnostics.json.sarif.Main Main.java
+      run: java -cp ./javac-diagnostics-wrapper.jar io.github.wmdietl.diagnostics.json.sarif.Main Main.java
