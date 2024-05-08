@@ -19,9 +19,5 @@ jobs:
         distribution: 'adopt'
         java-version: '11'  # Adjust Java version as needed
 
-    - name: Build JAR
-      run: |
-        ./gradlew build  # or your build command
-
     - name: Run JAR
       run: java -jar ./javac-diagnostics-wrapper.jar io.github.wmdietl.diagnostics.json.sarif.Main
