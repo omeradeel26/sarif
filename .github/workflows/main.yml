@@ -3,15 +3,15 @@ name: CI
 on:
   push:
     branches:
-      - main  # Adjust branch name as needed
+      - master  # Adjust branch name as needed
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    - name: Checkout repository
+      uses: actions/checkout@v4
 
     - name: Set up JDK
       uses: actions/setup-java@v2
@@ -23,4 +23,4 @@ jobs:
         ./gradlew build  # or your build command
 
     - name: Run JAR
-      run: java -jar path/to/your.jar 
+      run: java -jar ./javac-diagnostics-wrapper.jar io.github.wmdietl.diagnostics.json.sarif.Main
