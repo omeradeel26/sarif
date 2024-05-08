@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main  # Adjust branch name as needed
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up JDK
+      uses: actions/setup-java@v2
+      with:
+        java-version: '11'  # Adjust Java version as needed
+
+    - name: Build JAR
+      run: |
+        ./gradlew build  # or your build command
+
+    - name: Run JAR
+      run: java -jar path/to/your.jar 
